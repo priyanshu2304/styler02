@@ -47,9 +47,25 @@ const styles = StyleSheet.create({
   },
   cardOne: {
     backgroundColor: '#ef5354',
+    elevation: 4,
+    shadowOffset: {
+      width: 10,
+      height: 10,
+    },
+    shadowColor: 'blue',
+    shadowOpacity: 0.4,
+    shadowRadius: 10,
   },
   cardTwo: {
     backgroundColor: '#50dbb4',
+    elevation: 4,
+    shadowOffset: {
+      width: 1,
+      height: 1,
+    },
+    shadowColor: 'blue',
+    shadowOpacity: 0.4,
+    shadowRadius: 10,
   },
   cardThree: {
     backgroundColor: '#5da3fa',
