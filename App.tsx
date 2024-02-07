@@ -1,12 +1,14 @@
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Flatcards from './components/Flatcards';
+import FancyCards from './components/FancyCards';
 const App = () => {
   return (
     <SafeAreaView>
-      <Text>
+      <ScrollView>
         <Flatcards />
-      </Text>
+        <FancyCards />
+      </ScrollView>
     </SafeAreaView>
   );
 };
