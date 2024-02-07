@@ -28,16 +28,27 @@ const FancyCards = () => {
 export default FancyCards;
 
 const styles = StyleSheet.create({
-  headingText: {padding: 8},
-  card: {},
-  cardElivated: {},
+  headingText: {padding: 8, fontSize: 24, fontWeight: 'bold'},
+  card: {width: 350, height: 360, borderRadius: 6, marginHorizontal: 16},
+  cardElivated: {
+    backgroundColor: '#7878784d',
+    elevation: 10,
+    shadowOffset: {
+      height: 1,
+      width: 1,
+    },
+    shadowColor: '#7878784d',
+  },
   cardImage: {
     height: 180,
     backgroundColor: 'red',
+    marginBottom: 8,
+    borderTopLeftRadius: 8,
+    borderTopRightRadius: 8,
   },
-  cardBody: {},
-  cardTitle: {},
-  cardLabel: {},
-  cardDescription: {},
+  cardBody: {flex: 1, flexGrow: 1, paddingHorizontal: 12},
+  cardTitle: {fontSize: 22, fontWeight: 'bold', marginBottom: 6},
+  cardLabel: {fontSize: 18, fontWeight: 'bold', marginBottom: 6},
+  cardDescription: {fontSize: 14, marginBottom: 12},
   cardFooter: {},
 });
